@@ -17,7 +17,8 @@ pub_exp = 65537
 -- Exponent of private key
 pri_exp :: Integer
 pri_exp = invertMod (tot p q) pub_exp
--- has the property that (a^e)^d = 1 (mod m) for any message a
+-- has the property that (a^pub_exp)^pri_exp = a (mod m) for any message a
+-- since pub_exp * pri_exp = 1 mod(tot p q)
 
 -- Carmichael's Totient Function
 -- The minimum number n such that a^n = 1 (mod modulus)
