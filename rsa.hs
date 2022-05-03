@@ -1,3 +1,7 @@
+-- THIS PROGRAM IS FOR EDUCATIONAL PURPOSES ONLY
+-- PLEASE DO NOT TRY TO ACTUALLY USE THIS FOR ANYTHING SENSITIVE
+-- THAT WOULD BE STUPID
+-- AND YOU AREN'T STUPID, ARE YOU?
 main = putStrLn "You probably want to run this via the interactive compiler..."
 
 -- p and q are both large primes
@@ -48,3 +52,6 @@ encrypt = modExp modulus pub_exp
 
 decrypt = modExp modulus pri_exp
 
+-- Note that in some special cases, like if the message is 0 or 1,
+-- encryption kinda dies. This is what padding schemes are for,
+-- but we won't implement them here.
