@@ -1,7 +1,6 @@
 -- THIS PROGRAM IS FOR EDUCATIONAL PURPOSES ONLY
 -- PLEASE DO NOT TRY TO ACTUALLY USE THIS FOR ANYTHING SENSITIVE
 -- THAT WOULD BE STUPID
--- AND YOU AREN'T STUPID, ARE YOU?
 main = putStrLn "You probably want to run this via the interactive compiler..."
 
 -- p and q are both large primes
@@ -40,7 +39,7 @@ invertMod m n = snd (eea m n)
                    (s, t) = eea b r
 
 -- Modular exponentiation
--- Runs in O(log n)
+-- Runs in pseudo-O(log n)
 modExp :: Integer -> Integer -> Integer -> Integer
 -- modulus, exponent, num
 modExp m e n 
